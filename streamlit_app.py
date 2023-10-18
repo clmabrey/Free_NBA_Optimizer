@@ -37,7 +37,7 @@ def grab_csv_data(URL):
 
 with tab1:
     hold_container = st.empty()
-    st.info('This is a free to use NBA optimizer while I play around with this app platform. In order to use it, upload a csv with that the columns oriented in this order: Player, Team, Position, Salary, Projection, Ownership. The columns names do not matter, but the orientation does!')
+    st.info('This is a free to use NBA optimizer for Clockwork Sports NBA DFS users. In order to use it, upload a csv with that the columns oriented in this order: Player, Team, Position, Salary, Projection, Ownership. The columns names do not matter, but the orientation does!')
     uploaded_file = st.file_uploader("Choose a file")
     if uploaded_file is not None:
       proj_data = pd.read_csv(uploaded_file)
